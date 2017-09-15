@@ -26,7 +26,7 @@ public class DistributedCache {
         if(job.waitForCompletion(true)){
               Configuration conf2 = new Configuration();
               Job job2 = Job.getInstance(conf2, "FindFrequency");
-              job2.addCacheFile(new URI(temoutput+"part-r-00000#words"));
+              job2.addCacheFile(new URI("hdfs://ec2-18-221-80-249.us-east-2.compute.amazonaws.com:8020/user/ubuntu/"+temoutput+"part-r-00000#words"));
               job2.setJarByClass(FindFrequency.class);
               job2.setMapperClass(FindFrequency.mapper.class);
               job2.setCombinerClass(FindFrequency.reducer.class);
