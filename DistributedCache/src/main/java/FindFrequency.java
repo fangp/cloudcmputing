@@ -23,7 +23,7 @@ public class FindFrequency {
         public void setup(Context context) throws IOException {
             if (context.getCacheFiles() != null
                     && context.getCacheFiles().length > 0) {
-                //String filename = context.getCacheFiles()[0].toString();
+                String filename = context.getCacheFiles()[0].toString();
                 //System.out.println(filename);
                 BufferedReader br = new BufferedReader(new FileReader(new File("words")));
                 String line = "";
