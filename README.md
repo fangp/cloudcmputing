@@ -1,3 +1,3 @@
 # cloudcmputing
-Hadoop+mapreduce: OneWordCOunt, DoubleWordCount, DistributedCache \n
+Hadoop+mapreduce: OneWordCOunt, DoubleWordCount, DistributedCache /n
 Spark+scala+graphx: pgrank
